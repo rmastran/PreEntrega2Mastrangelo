@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+        <title>Juan Cruz Propiedades</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        
+        <header>
+            <nav class="navbar">
+                <h1>¡Tenemos el Hogar que soñás!</h1>
+                <a class="navbar__link" href="../index.html">
+                    <img class="navbar__img" src="../img/logo.png" alt="Logo de Juan Cruz Propiedades">
+                </a>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="menu__link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="../index.html">Bienvenidos</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="./enventa.html">En Venta</a>
+                    </li class="menu-item">
+                    <li class="menu__item">
+                        <a class="menu__link" href="./enalquiler.html">En Alquiler</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <a class="navbar__link" href="https://es-la.facebook.com/">
+                    <img class="navbar__img--redes" src="../img/logoface.png" alt="Facebook">
+                </a>
+                <a class="navbar__link" href="https://www.instagram.com/">
+                    <img class="navbar__img--redes" src="../img/logoinsta.png" alt="Instagram">
+                </a>
+            </nav>
+        </header>
+
+        <form class="formulario" action="index.js" method="post" enctype="">
+            <h2>Contáctese con Nosotros</h2>
+            <p>¿Necesita más información de nuestros servicios o coordinar una entrevista en nuestra Oficina? 
+                Lo invitamos a completar el siguiente formulario.
+                Nos pondremos en contacto con usted a la brevedad.</p>
+            <p>Agradecemos su preferencia, en JUAN CRUZ PROPIEDADES, estamos para servirle.</p>    
+            <fieldset>
+                <legend>Contactanos completando todos los campos</legend>
+                <div class="form-contenedor">
+                    <div class="form-campos">
+                        <label for="nombre">Nombre Completo:</label>
+                        <input class="form-input-text" type="text" name="user" id="user" placeholder="Su nombre y apellido">
+                    </div>
+                    <div class="form-campos">
+                        <label for="telefono">Teléfono:</label>
+                        <input class="form-input-text" type="tel" name="tel" id="tel" placeholder="Su teléfono">
+                    </div>
+                    <div class="form-campos">
+                        <label for="email">Email:</label>
+                        <input class="form-input-text" type="email" name="" id="email" placeholder="Su email">
+                    </div>
+                    <div class="form-campos">
+                        <label for="busca">En busca de:</label>
+                        <select name="inmbueble" id="">
+                            <option value="inmueble">Apartamento</option>
+                            <option value="inmueble">Casa</option>
+                            <option value="inmueble">Barrio Privado</option>
+                            <option value="inmueble">Todos</option>
+                        </select>
+                    </div>
+                    <div class="form-campos">
+                        <label for="consulta">Déjenos su consulta:</label>
+                        <textarea name="textarea" id="" cols="30" rows="10" placeholder="Consultenos aquí"></textarea>
+                    </div> 
+                </div>
+                <div>
+                    <input class="form__boton" type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+        
+    </body>
+
+    <footer>
+        <div class="footer-divs">
+            <h3>Teléfonos</h3>
+            <img class="footer__icono" src="../img/iconotelefono.png" alt="Icono en pie de página">
+            <p>+598 42 48 12 34</p>
+            <img class="footer__icono" src="../img/iconotelefono.png" alt="Icono en pie de página">
+            <p>+598 42 48 12 35</p>
+            <img class="footer__icono" src="../img/iconowsp.png" alt="Icono en pie de página">
+            <p>+598 99 12 34 56</p>
+            <img class="footer__icono" src="../img/iconowsp.png" alt="Icono en pie de página">
+            <p>+598 99 12 34 57</p>
+        </div>
+        <div class="footer-divs">
+            <div>
+                <h3>Contacto</h3>
+                <img class="footer__icono" src="../img/iconoubicacion.png" alt="Icono en pie de página">
+                <p>Avenida Franklin Roosevelt esquina Salt Lake</p>
+                <img class="footer__icono" src="../img/iconomensaje.png" alt="Icono en pie de página">
+                <p>contacto@juancruzpropiedades.com.uy</p>
+            </div>
+            <div>
+                <h3>¡Síguenos!</h3>
+                <img class="footer__icono" src="../img/iconoface.png" alt="Icono en pie de página">
+                <img class="footer__icono" src="../img/iconoinsta.png" alt="Icono en pie de página">
+            </div>
+        </div>
+        <div class="footer-divs">
+            <iframe width="600" height="400" src="https://www.youtube.com/embed/KnvKUMarQ-8" title="Uruguay Punta del este  ROU 1🇺🇾 #Drone 4k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="footer__derechos">
+            Todos los derechos reservados. © Juan Cruz Propiedades
+        </p>
+    </footer>
+
+</html>
