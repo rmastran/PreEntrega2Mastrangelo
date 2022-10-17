@@ -170,6 +170,11 @@ main section h2, .bienvenidos__titulo, .bienvenidos__parrafo {
     height: 1.5rem;
 }
 
+.footer__video {
+    width: 400px;
+    height: 267px;
+}
+
 .footer__derechos {
     text-align: center;
 }
@@ -257,5 +262,42 @@ main section h2, .bienvenidos__titulo, .bienvenidos__parrafo {
     }
 }
 
-/* background-attachment: fixed; (propiedad para dejar una imagen fija en el centro de pagina mientras se scrollea (posiblemente lo use)*/ 
+/* Corrigiendo responsive con @media */
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 1.3em;
+    }
+    main {
+        padding: var(--sp-md) var(--sp-sm);
+    }
+    .propiedades-destacadas__img {
+        width: 20rem;
+        height: 13.3333333rem;
+        padding: var(--sp-xs);
+    }
+
+    .footer__video {
+        width: 200px;
+        height: 133.333333px;
+    }
+}
+
+@media screen and (max-width: 306px) {
+    body {
+        font-size: 1em;
+    }
+    main {
+        padding: var(--sp-sm) var(--sp-xs);
+    }
+    .propiedades-destacadas__img {
+        width: 15rem;
+        height: 10rem;
+        padding: 0;
+    }
+
+    .footer__video {
+        width: 150px;
+        height: 100px;
+    }
+}
 
