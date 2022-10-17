@@ -101,18 +101,6 @@ ul  {
 .navbar__img {
     width: 10rem;
     height: 10rem;
-    animation: appear .5s 1 linear;
-}
-
-@keyframes appear {
-    from {
-        transform: translate(-500px);
-        opacity: 0;
-    }
-    to {
-        transform: translate(0);
-        opacity: 1;
-    }
 }
 
 .menu__link {
