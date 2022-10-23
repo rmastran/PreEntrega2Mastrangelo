@@ -116,6 +116,12 @@ ul  {
     opacity: .8;
 }
 
+.navbar-light .navbar-toggler-icon {
+    width: 4rem;
+    height: 4rem;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28246, 247, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 .navbar__img--redes {
     width: 4rem;
     height: 4rem;
@@ -287,12 +293,27 @@ main section h2, .bienvenidos__titulo, .bienvenidos__parrafo, .nosotros {
 }
 
 /* Corrigiendo responsive con @media */
+
+@media screen and (max-width: 670px) {
+    .menu__item {
+        font-size: var(--text-xs);
+    }
+    .navbar-light .navbar-toggler-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
 @media screen and (max-width: 576px) {
     body {
         font-size: 1.3em;
     }
     main {
         padding: var(--sp-md) var(--sp-sm);
+    }
+    .navbar__img {
+        width: 6rem;
+        height: 6rem;
     }
     .propiedades-destacadas__img {
         width: 20rem;
