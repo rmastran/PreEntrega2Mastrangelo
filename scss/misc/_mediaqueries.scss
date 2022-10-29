@@ -1,0 +1,71 @@
+/* Corrigiendo responsive con @media */
+@media screen and (max-width: 670px) {
+    header {
+        .menu__item {
+            font-size: $text-xs;
+        }
+        .navbar-light .navbar-toggler-icon {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 1.3em;
+
+        .navbar__img {
+            width: 6rem;
+            height: 6rem;
+        }
+        main {
+            padding: $sp-md $sp-sm;
+
+            .propiedades-destacadas {
+                .separador-articulos {
+                    .propiedades-destacadas__img {
+                        width: 20rem;
+                        height: 13.3333333rem;
+                        padding: $sp-xs;
+                    }
+                }
+            }
+        }
+        
+        footer {
+            .footer__video {
+                width: 200px;
+                height: 133.333333px;
+            }
+        }
+    }   
+}
+
+@media screen and (max-width: 306px) {
+    body {
+        font-size: 1em;
+
+        main {
+            padding: $sp-sm $sp-xs;
+
+            .propiedades-destacadas {
+                .separador-articulos {
+                    .propiedades-destacadas__img {
+                        width: 15rem;
+                        height: 10rem;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+        
+        footer {
+            .footer__video {
+                width: 150px;
+                height: 100px;
+            }
+        }
+    }   
+}

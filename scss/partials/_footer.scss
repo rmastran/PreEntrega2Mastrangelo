@@ -1,24 +1,18 @@
+// @import "../misc/variables";
+
 footer {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 66%, rgba(0,75,149,1) 100%, rgba(0,161,194,1) 100%);
-    color: var(--light);
-    font-size: var(--text-xs);
-}
+    color: $light;
+    font-size: $text-xs;
 
-.footer-divs {
-    padding: var(--sp-xs);
-}
+    .footer__icono {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 
-.footer__icono {
-    width: 1.5rem;
-    height: 1.5rem;
-}
-
-.footer__video {
-    width: 400px;
-    height: 267px;
-}
-
-.footer__derechos {
-    text-align: center;
+    .footer__video {
+        width: 400px;
+        height: 267px;
+    }
 }

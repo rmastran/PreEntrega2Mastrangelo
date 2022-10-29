@@ -1,59 +1,58 @@
+// @import "../misc/variables";
 .formulario {
-    background-color: var(--primary);
+    background-color: $primary;
     width: min( 80rem, 100% ); /*Utiliza el valor más chico*/
     margin: 0 auto;
-    padding: var(--sp-md);
-    border-radius: var(--sp-sm);
-}
+    padding: $sp-md;
+    border-radius: $sp-sm;
 
-.formulario fieldset {
-    border: none;
-}
+    fieldset {
+        border: none;
 
-.formulario legend {
-    text-align: left;
-    font-size: var(--text-sm);
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: var(--sp-sm);
-    color: var(--secundary);
-    padding-top: var(--sp-sm);
-}
+        legend {
+            text-align: left;
+            font-size: $text-sm;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: $sp-sm;
+            color: $secundary;
+            padding-top: $sp-sm;
+        }
+        .form-campos {
+            margin-bottom: $sp-sm;
+    
+            label {
+                color: $oxford-blue;
+                font-weight: bold;
+                margin-bottom: $sp-sm;
+                display: block;
+            }
+    
+            textarea {
+                width: 100%;
+                height: 20rem;
+                padding: $sp-sm;
+                border-radius: $sp-xs;
+            }
 
-.form-campos {
-    margin-bottom: var(--sp-sm);
-}
-
-.form-campos label {
-    color: var(--oxford-blue);
-    font-weight: bold;
-    margin-bottom: var(--sp-sm);
-    display: block;
-}
-
-.form-campos textarea {
-    width: 100%;
-    height: 20rem;
-    padding: var(--sp-sm);
-    border-radius: var(--sp-xs);
-}
-
-.form-input-text {
-    width: 100%;
-    border: none;
-    padding: var(--sp-sm);
-    border-radius: var(--sp-xs);
-}
-
-.form__boton {
-    background-color: var(--oxford-blue);
-    color: var(--light);
-    padding: var(--sp-xs) var(--sp-sm);
-    margin-top: var(--sp-xs);
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: var(--sp-sm);
-    border: none;
+            .form-input-text {
+                width: 100%;
+                border: none;
+                padding: $sp-sm;
+                border-radius: $sp-xs;
+            }
+        }
+        .form__boton {
+            background-color: $oxford-blue;
+            color: $light;
+            padding: $sp-xs $sp-sm;
+            margin-top: $sp-xs;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: $sp-sm;
+            border: none;
+        }
+    }
 }
 
 @media (min-width: 768px) {

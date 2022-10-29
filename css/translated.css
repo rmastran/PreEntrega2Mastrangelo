@@ -1,18 +1,298 @@
-/* Error: Undefined variable.
- *    ,
- * 15 |     color: $secundary;
- *    |            ^^^^^^^^^^
- *    '
- *   scss\misc\_normalize.scss 15:12  @import
- *   scss\styles.scss 6:9             root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 15 \2502      color: $secundary;\d\a    \2502             ^^^^^^^^^^\a    \2575 \a   scss\\misc\\_normalize.scss 15:12  @import\a   scss\\styles.scss 6:9             root stylesheet";
+@charset "UTF-8";
+/* IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display:ital@0;1&family=Great+Vibes&display=swap");
+/* MISC */
+/* VARIABLES */
+/* Pallete */
+/* Font Sizes */
+/* Spacings */
+/* NORMALIZE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html { /* etiqueta raíz */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.6em;
+  color: #0d1317;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(246, 247, 255);
+  text-align: center;
+  padding: 5rem 3.2rem;
+}
+
+h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3.2em;
+  color: #101d42;
+  text-align: center;
+}
+
+h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 3.2em;
+}
+
+h3 {
+  font-size: 2.2em;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6em;
+  color: #fdfdfd;
+}
+
+ul {
+  list-style-type: none;
+}
+
+main section h2, .bienvenidos__titulo, .bienvenidos__parrafo, .nosotros {
+  text-align: left;
+  padding: 1.2rem;
+}
+
+/* PARTIALS */
+header {
+  background-image: url(../img/1header_img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+  margin: 0 auto;
+  position: relative;
+}
+header .navbar {
+  padding: 1.2rem;
+}
+header .navbar__img {
+  width: 10rem;
+  height: 10rem;
+}
+header .menu__link {
+  padding: 1rem;
+  transition: 0.7s;
+  border-radius: 3.2rem;
+  border: none;
+}
+header .menu__link:hover {
+  background-color: #101d42;
+  color: #fdfdfd;
+  opacity: 0.8;
+}
+header .navbar-light .navbar-toggler-icon {
+  width: 4rem;
+  height: 4rem;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28246, 247, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+header .navbar__img--redes {
+  width: 4rem;
+  height: 4rem;
+}
+
+footer {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 66%, rgb(0, 75, 149) 100%, rgb(0, 161, 194) 100%);
+  color: #fdfdfd;
+  font-size: 0.8em;
+}
+footer .footer__icono {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+footer .footer__video {
+  width: 400px;
+  height: 267px;
+}
+
+/* PAGES */
+.propiedades-destacadas .separador-articulos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.propiedades-destacadas .separador-articulos article {
+  padding: 3.2rem;
+}
+.propiedades-destacadas .separador-articulos article .propiedades-destacadas__titulo {
+  font-size: 1.6em;
+}
+.propiedades-destacadas .separador-articulos article .propiedades-destacadas__img {
+  width: 30rem;
+  height: 20rem;
+  padding: 1.2rem;
+}
+.propiedades-destacadas .separador-articulos article .link--vermas {
+  color: #101d42;
+  text-decoration: underline;
+  font-size: 0.8em;
+}
+
+.separador-articulos .alquileres-ventas {
+  padding: 0.8rem;
+  border-radius: 3.2rem;
+  margin: 0.8rem;
+  background-color: #fdfdfd;
+}
+.separador-articulos .alquileres-ventas .alquileres-ventas__titulo {
+  text-transform: uppercase;
+}
+.separador-articulos .alquileres-ventas .link--vermas {
+  color: #101d42;
+  text-decoration: underline;
+  font-size: 0.8em;
+}
+
+.propiedades-destacadas, #bienvenidos, .alquileres-ventas {
+  padding: 1.2rem 0;
+}
+
+@media (min-width: 768px) {
+  .separador-articulos .propiedades-destacadas-articulos, .alquileres-ventas {
+    flex: 1 1 30rem;
+  }
+}
+.formulario {
+  background-color: rgb(246, 247, 255);
+  width: min(80rem, 100%); /*Utiliza el valor más chico*/
+  margin: 0 auto;
+  padding: 3.2rem;
+  border-radius: 1.2rem;
+}
+.formulario fieldset {
+  border: none;
+}
+.formulario fieldset legend {
+  text-align: left;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: #0d1317;
+  padding-top: 1.2rem;
+}
+.formulario fieldset .form-campos {
+  margin-bottom: 1.2rem;
+}
+.formulario fieldset .form-campos label {
+  color: #101d42;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+  display: block;
+}
+.formulario fieldset .form-campos textarea {
+  width: 100%;
+  height: 20rem;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+}
+.formulario fieldset .form-campos .form-input-text {
+  width: 100%;
+  border: none;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+}
+.formulario fieldset .form__boton {
+  background-color: #101d42;
+  color: #fdfdfd;
+  padding: 0.8rem 1.2rem;
+  margin-top: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 1.2rem;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .form-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto 20rem;
+    column-gap: 1rem;
+  }
+  .form-campos:nth-child(1),
+.form-campos:nth-child(5) {
+    grid-column: 1/5;
+  }
+}
+@media (min-width: 768px) {
+  .form-contenedor-ayv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    column-gap: 1rem;
+  }
+  .form-campos:nth-child(1),
+.form-campos:nth-child(5) {
+    grid-column: 1/5;
+  }
+}
+.card-estilo {
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+  cursor: default;
+}
+.card-estilo:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translate(-3%);
+}
+
+/* MISC MEDIA QUERIES */
+/* Corrigiendo responsive con @media */
+@media screen and (max-width: 670px) {
+  header .menu__item {
+    font-size: 0.8em;
+  }
+  header .navbar-light .navbar-toggler-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 1.3em;
+  }
+  body .navbar__img {
+    width: 6rem;
+    height: 6rem;
+  }
+  body main {
+    padding: 3.2rem 1.2rem;
+  }
+  body main .propiedades-destacadas .separador-articulos .propiedades-destacadas__img {
+    width: 20rem;
+    height: 13.3333333rem;
+    padding: 0.8rem;
+  }
+  body footer .footer__video {
+    width: 200px;
+    height: 133.333333px;
+  }
+}
+@media screen and (max-width: 306px) {
+  body {
+    font-size: 1em;
+  }
+  body main {
+    padding: 1.2rem 0.8rem;
+  }
+  body main .propiedades-destacadas .separador-articulos .propiedades-destacadas__img {
+    width: 15rem;
+    height: 10rem;
+    padding: 0;
+  }
+  body footer .footer__video {
+    width: 150px;
+    height: 100px;
+  }
+}
+
+/*# sourceMappingURL=translated.css.map */

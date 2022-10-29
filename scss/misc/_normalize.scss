@@ -1,3 +1,5 @@
+// @import "./variables";
+
 /* NORMALIZE */
 * {
     margin: 0;
@@ -11,7 +13,7 @@ html { /* etiqueta raíz */
 
 body {
     font-family: 'DM Sans', sans-serif;
-    
+    font-size: $text-sm;
     color: $secundary;
 }
 
@@ -54,55 +56,3 @@ main section h2, .bienvenidos__titulo, .bienvenidos__parrafo, .nosotros {
     padding: $sp-sm;
 }
 
-/* Corrigiendo responsive con @media */
-@media screen and (max-width: 670px) {
-    .menu__item {
-        font-size: $text-xs;
-    }
-    .navbar-light .navbar-toggler-icon {
-        width: 2rem;
-        height: 2rem;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    body {
-        font-size: 1.3em;
-    }
-    main {
-        padding: $sp-md $sp-sm;
-    }
-    .navbar__img {
-        width: 6rem;
-        height: 6rem;
-    }
-    .propiedades-destacadas__img {
-        width: 20rem;
-        height: 13.3333333rem;
-        padding: $sp-xs;
-    }
-
-    .footer__video {
-        width: 200px;
-        height: 133.333333px;
-    }
-}
-
-@media screen and (max-width: 306px) {
-    body {
-        font-size: 1em;
-    }
-    main {
-        padding: $sp-sm $sp-xs;
-    }
-    .propiedades-destacadas__img {
-        width: 15rem;
-        height: 10rem;
-        padding: 0;
-    }
-
-    .footer__video {
-        width: 150px;
-        height: 100px;
-    }
-}
