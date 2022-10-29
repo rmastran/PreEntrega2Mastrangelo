@@ -1,5 +1,5 @@
 /* IMPORTS */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display:ital@0;1&family=Great+Vibes&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display:ital@0;1&family=Great+Vibes&display=swap'); */
 
 /* VARIABLES */
 :root {
@@ -28,13 +28,13 @@
 }
 
 /* NORMALIZE */
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html { /* etiqueta raíz */
+html { 
     font-size: 62.5%;
 }
 
@@ -42,33 +42,33 @@ body {
     font-family: 'DM Sans', sans-serif;
     font-size: var(--text-sm);
     color: var(--secundary);
-}
+} */
 
-header {
+/* header {
     background-image: url(../img/1header_img.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 450px;
     margin: 0 auto;
     position: relative;
-}
+} */
 
-main {
+/* main {
     max-width: 1200px;
     margin: 0 auto;
     background-color: var(--primary);
     text-align: center;
     padding: var(--sp-lg) var(--sp-md);
-}
+} */
 
-footer {
+/* footer {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 66%, rgba(0,75,149,1) 100%, rgba(0,161,194,1) 100%);
     color: var(--light);
     font-size: var(--text-xs);
-}
+} */
 
-h1 {
+/* h1 {
     font-family: 'Great Vibes', cursive;
     font-size: var(--text-lg);
     color: var(--oxford-blue);
@@ -92,9 +92,9 @@ a {
 
 ul  {
     list-style-type: none;
-}
+} */
 
-.navbar {
+/* .navbar {
     padding: var(--sp-sm);
 }
 
@@ -125,9 +125,9 @@ ul  {
 .navbar__img--redes {
     width: 4rem;
     height: 4rem;
-}
+} */
 
-.propiedades-destacadas article {
+/* .propiedades-destacadas article {
     padding: var(--sp-md);
 }
 
@@ -145,14 +145,14 @@ ul  {
     color: var(--oxford-blue);
     text-decoration: underline;
     font-size: var(--text-xs);
-}
+} */
 
-main section h2, .bienvenidos__titulo, .bienvenidos__parrafo, .nosotros {
+/* main section h2, .bienvenidos__titulo, .bienvenidos__parrafo, .nosotros {
     text-align: left;
     padding: var(--sp-sm);
-}
+} */
 
-.alquileres-ventas {
+/* .alquileres-ventas {
     padding: var(--sp-xs);
     border-radius: var(--sp-md);
     margin: var(--sp-xs);
@@ -165,9 +165,9 @@ main section h2, .bienvenidos__titulo, .bienvenidos__parrafo, .nosotros {
 
 .propiedades-destacadas, #bienvenidos, .alquileres-ventas {
     padding: var(--sp-sm) 0;
-}
+} */
 
-.footer-divs {
+/* .footer-divs {
     padding: var(--sp-xs);
 }
 
@@ -183,12 +183,12 @@ main section h2, .bienvenidos__titulo, .bienvenidos__parrafo, .nosotros {
 
 .footer__derechos {
     text-align: center;
-}
+} */
 
 /* Contacto */
-.formulario {
+/* .formulario {
     background-color: var(--primary);
-    width: min( 80rem, 100% ); /*Utiliza el valor más chico*/
+    width: min( 80rem, 100% ); //Utiliza el valor más chico//
     margin: 0 auto;
     padding: var(--sp-md);
     border-radius: var(--sp-sm);
@@ -255,9 +255,9 @@ main section h2, .bienvenidos__titulo, .bienvenidos__parrafo, .nosotros {
     .form-campos:nth-child(5) {
         grid-column: 1 / 5;
     }
-}
+} */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .form-contenedor-ayv {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -279,9 +279,9 @@ main section h2, .bienvenidos__titulo, .bienvenidos__parrafo, .nosotros {
 .card-estilo:hover {
     box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
     transform: translate(-3%);
-}
+} */
 
-.separador-articulos {
+/* .separador-articulos {
     display: flex;
     flex-wrap: wrap;
 }
@@ -290,11 +290,11 @@ main section h2, .bienvenidos__titulo, .bienvenidos__parrafo, .nosotros {
     .separador-articulos .propiedades-destacadas-articulos, .alquileres-ventas {
         flex: 1 1 30rem;
     }
-}
+} */
 
 /* Corrigiendo responsive con @media */
 
-@media screen and (max-width: 670px) {
+/* @media screen and (max-width: 670px) {
     .menu__item {
         font-size: var(--text-xs);
     }
@@ -344,5 +344,5 @@ main section h2, .bienvenidos__titulo, .bienvenidos__parrafo, .nosotros {
         width: 150px;
         height: 100px;
     }
-}
+} */
 

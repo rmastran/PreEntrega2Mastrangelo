@@ -1,0 +1,15 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display:ital@0;1&family=Great+Vibes&display=swap');
+
+/* MISC */
+@import "./misc/variables";
+@import "./misc/normalize";
+
+/* PARTIALS */
+@import "./partials/header";
+@import "./partials/footer";
+
+/* PAGES */
+@import "./pages/index";
+@import "./pages/contacto";
+@import "./pages/enalquileryenventa";

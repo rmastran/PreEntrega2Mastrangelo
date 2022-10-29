@@ -1,0 +1,108 @@
+/* NORMALIZE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { /* etiqueta raíz */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    
+    color: $secundary;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: $primary;
+    text-align: center;
+    padding: $sp-lg $sp-md;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: $text-lg;
+    color: $oxford-blue;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: $text-lg;
+}
+
+h3 {
+    font-size: $text-md;
+}
+
+a {
+    text-decoration: none;
+    font-size: $text-sm;
+    color: $light;
+}
+
+ul  {
+    list-style-type: none;
+}
+
+main section h2, .bienvenidos__titulo, .bienvenidos__parrafo, .nosotros {
+    text-align: left;
+    padding: $sp-sm;
+}
+
+/* Corrigiendo responsive con @media */
+@media screen and (max-width: 670px) {
+    .menu__item {
+        font-size: $text-xs;
+    }
+    .navbar-light .navbar-toggler-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 1.3em;
+    }
+    main {
+        padding: $sp-md $sp-sm;
+    }
+    .navbar__img {
+        width: 6rem;
+        height: 6rem;
+    }
+    .propiedades-destacadas__img {
+        width: 20rem;
+        height: 13.3333333rem;
+        padding: $sp-xs;
+    }
+
+    .footer__video {
+        width: 200px;
+        height: 133.333333px;
+    }
+}
+
+@media screen and (max-width: 306px) {
+    body {
+        font-size: 1em;
+    }
+    main {
+        padding: $sp-sm $sp-xs;
+    }
+    .propiedades-destacadas__img {
+        width: 15rem;
+        height: 10rem;
+        padding: 0;
+    }
+
+    .footer__video {
+        width: 150px;
+        height: 100px;
+    }
+}

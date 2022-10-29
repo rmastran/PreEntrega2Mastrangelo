@@ -1,0 +1,45 @@
+.propiedades-destacadas article {
+    padding: var(--sp-md);
+}
+
+.propiedades-destacadas__titulo {
+    font-size: var(--text-sm);
+}
+
+.propiedades-destacadas__img {
+    width: 30rem;
+    height: 20rem;
+    padding: var(--sp-sm);
+}
+
+.link--vermas {
+    color: var(--oxford-blue);
+    text-decoration: underline;
+    font-size: var(--text-xs);
+}
+
+.alquileres-ventas {
+    padding: var(--sp-xs);
+    border-radius: var(--sp-md);
+    margin: var(--sp-xs);
+    background-color: var(--light);
+}
+
+.alquileres-ventas__titulo {
+    text-transform: uppercase;
+}
+
+.propiedades-destacadas, #bienvenidos, .alquileres-ventas {
+    padding: var(--sp-sm) 0;
+}
+
+.separador-articulos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+    .separador-articulos .propiedades-destacadas-articulos, .alquileres-ventas {
+        flex: 1 1 30rem;
+    }
+}
