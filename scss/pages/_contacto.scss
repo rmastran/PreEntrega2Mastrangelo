@@ -58,6 +58,7 @@
 @media (min-width: 768px) {
     .form-contenedor {
         @include grid (repeat(2, 1fr), auto auto 20rem, 1rem);
+
     }
     .form-campos:nth-child(1),
     .form-campos:nth-child(5) {
