@@ -79,13 +79,18 @@ header .navbar__img {
   width: 10rem;
   height: 10rem;
 }
-header .menu__link {
+header .menu__link, header .menu__link--active {
   padding: 1rem;
   transition: 0.7s;
   border-radius: 3.2rem;
   border: none;
 }
-header .menu__link:hover {
+header .menu__link--active {
+  background-color: #fdfdfd;
+  opacity: 0.4;
+  color: #101d42;
+}
+header .menu__link:hover, header .menu__link--active:hover {
   background-color: #101d42;
   color: #fdfdfd;
   opacity: 0.8;

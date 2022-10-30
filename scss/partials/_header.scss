@@ -21,12 +21,19 @@ header {
         transition: .7s;
         border-radius: $sp-md;
         border: none;
-    }
-    
-    .menu__link:hover {
-        background-color: $oxford-blue;
-        color: $light;
-        opacity: .8;
+
+        &--active {
+            @extend .menu__link;
+            background-color: $light;
+            opacity: .4;
+            color: $oxford-blue;
+        }
+
+        &:hover {
+            background-color: $oxford-blue;
+            color: $light;
+            opacity: .8;
+        }
     }
     
     .navbar-light .navbar-toggler-icon {
