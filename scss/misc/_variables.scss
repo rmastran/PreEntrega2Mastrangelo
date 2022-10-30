@@ -21,3 +21,10 @@ $sp-lg: 5rem;
 $sp-md: 3.2rem;
 $sp-sm: 1.2rem;
 $sp-xs: 0.8rem;
+
+/* MAPS */
+$paddings:(
+    padd3: $sp-md,
+    padd2: $sp-sm,
+    padd1: $sp-xs
+)

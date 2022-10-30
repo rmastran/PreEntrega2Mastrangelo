@@ -5,7 +5,7 @@
         flex-wrap: wrap;
 
         article {
-            padding: $sp-md;
+            padding: map-get($paddings , padd3 );
 
             .propiedades-destacadas__titulo {
                 font-size: $text-sm;
@@ -14,7 +14,7 @@
             .propiedades-destacadas__img {
                 width: 30rem;
                 height: 20rem;
-                padding: $sp-sm;
+                padding: map-get($paddings , padd2 );
             }
 
             .link--vermas {
@@ -28,9 +28,9 @@
 
 .separador-articulos {
     .alquileres-ventas {
-        padding: $sp-xs;
-        border-radius: $sp-md;
-        margin: $sp-xs;
+        padding: map-get($paddings , padd1 );
+        border-radius: map-get($paddings , padd3 );
+        margin: map-get($paddings , padd1 );
         background-color: $light;
 
         .alquileres-ventas__titulo {
@@ -46,7 +46,7 @@
 }
 
 .propiedades-destacadas, #bienvenidos, .alquileres-ventas {
-    padding: $sp-sm 0;
+    padding: map-get($paddings , padd2 ) 0;
 }
 
 
