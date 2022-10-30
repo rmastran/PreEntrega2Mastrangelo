@@ -221,7 +221,7 @@ footer .footer__video {
   .form-contenedor {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto 20rem;
+    grid-template-rows: repeat(2, 1fr);
     column-gap: 1rem;
   }
   .form-campos:nth-child(1),
@@ -233,7 +233,7 @@ footer .footer__video {
   .form-contenedor-ayv {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
+    grid-template-rows: repeat(2, 1fr);
     column-gap: 1rem;
   }
   .form-campos:nth-child(1),

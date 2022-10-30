@@ -1,0 +1,6 @@
+@mixin grid($gtc, $gtr, $colgap) {
+    display: grid;
+    grid-template-columns: $gtc;
+    grid-template-rows: $gtc;
+    column-gap: 1rem;
+}
