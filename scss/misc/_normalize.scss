@@ -18,7 +18,7 @@ body {
 }
 
 main {
-    max-width: 1200px;
+    max-width: $sp-xxl*10;
     margin: 0 auto;
     background-color: $primary;
     text-align: center;
