@@ -65,7 +65,7 @@ main section h2, .bienvenidos__titulo, .bienvenidos__parrafo, .nosotros {
 
 /* PARTIALS */
 header {
-  background-image: url(../img/1header_img.jpg);
+  background-image: url(../img/1header_img.webp);
   background-size: cover;
   background-repeat: no-repeat;
   height: 450px;
